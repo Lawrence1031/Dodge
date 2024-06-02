@@ -7,12 +7,12 @@ public class PlayerController : MonoBehaviour
     private Rigidbody playerRigidbody;
     public float speed = 8f;
 
-    void Start()
+    private void Start()
     {
         playerRigidbody = GetComponent<Rigidbody>();
     }
 
-    void Update()
+    private void Update()
     {
         float xInput = Input.GetAxis("Horizontal");
         float zInput = Input.GetAxis("Vertical");
